@@ -1,6 +1,6 @@
 <?php
-include '_class/cms_class.php';
-include '_class/db-conf.php';
+include '../../cms_class.php';
+include '../../db-conf.php';
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -9,9 +9,9 @@ include '_class/db-conf.php';
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>minima 1.1 preview</title>
-<?php
-include 'ant/themes/deftheme.php';
-    ?>
+<link href="style.css" rel="stylesheet" type="text/css" />
+
+    
    </head>
    <body>
 

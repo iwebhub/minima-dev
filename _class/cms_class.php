@@ -169,6 +169,7 @@ echo '<p>Something is missing, or you are trying to edit a post that does not ex
 	endif;
 		
 	}
+	
 		
 } // Zavrsava class
 ?>
