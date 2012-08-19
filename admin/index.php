@@ -20,11 +20,12 @@ include '../_class/db-conf.php';
     </div>
     
     <div class="container">
-    
- <a href="add-content.php">add content</a> | <a href="manage-content.php">manage content</a>
+    <h2>Content</h2>
+ <a href="add-content.php">add content</a> | <a href="manage-content.php">manage content</a><br><a href="add-page.php">add a page</a> | <a href="manage-pages.php">manage pages</a> | <a href="lpages.php">list pages</a>
+<h2>Configuration</h2>
+<a href="ctheme.php?id=1">change the theme</a>
 
-
-<p>You are running Minima 1.0.1, and updates <iframe src="http://d.plsr.tk/mcheck/1.0.1.html" frameborder=0 height=23 width=60 scrolling=no></iframe> ready. 
+<p>You are running Minima 1.1 Pre-release 2. <a href="http://antminima-omgapps.rhcloud.com/downloads">Check for updates</a></p>
     </div>
     
   <div class="container tutorial-info">
@@ -41,6 +42,8 @@ include '../footer.php'
 		$obj->add_content($_POST);
 	elseif($_POST['update']):
 		$obj->update_content($_POST);
+  elseif($_POST['ctheme']):
+    $obj->update_theme($_POST);
 	endif;
 ?>
 

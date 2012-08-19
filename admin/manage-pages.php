@@ -21,7 +21,7 @@ include '../_class/db-conf.php';
 	endif;
 ?>
 
-<?=$obj->manage_content()?>
+<?=$obj->manage_pages()?>
 
 
 </body>

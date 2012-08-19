@@ -6,23 +6,19 @@ include '../_class/db-conf.php';
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UFT-8" />
-<title>Minima 1.1</title>
+<title>Geronimo!</title>
 <link rel="stylesheet" href="../style.css" type="text/css">
 
 </head>
 
 <body>
 
-<div id="container">
-<h1>Manage content</h1>
-<?php
-	if($_GET['delete']):
-		$obj->delete_content($_GET['delete']);
-	endif;
-?>
+<div id="page-wrap">
+<?php include 'nav.php' ; ?>
 
-<?=$obj->manage_content()?>
+<h2> Change the default theme. </h2>
 
+<?=$obj->update_theme_form($_GET['id'])?>
 
 </body>
 <html>

@@ -32,7 +32,7 @@ tinyMCE.init({
     <div class="container">
     
 
-		</div>
+    </div>
 
  
 
@@ -42,21 +42,21 @@ tinyMCE.init({
 
 
 
-<center><h1><a href="add-content.php">add content</a> <- or -> <a href="manage-content.php">manage it</a></h1></center>
+<center><h1>Add a page</center>
 </div>
 <div>
 <form method="post" action="index.php">
-<input type="hidden" name="add" value="true" />
-	<div id="page-wrap">
+<input type="hidden" name="addpage" value="true" />
+  <div id="page-wrap">
 <label for="title">Title:</label>
 <input type="text" name="title" id="title" />
-	</div>
-	
-	<div id="page-wrap">
-	
+  </div>
+  
+  <div id="page-wrap">
+  
 <label for="body">Body:</label>
 <textarea name="body" id="body" rows="15" cols="48"> </textarea>
-	</div>
+  </div>
 
 
 <div id="page-wrap">
@@ -76,7 +76,7 @@ tinyMCE.init({
 
 
 
-	
+  
    <div id="footer">
 <div id="footer-content">
 
